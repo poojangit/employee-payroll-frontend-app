@@ -84,6 +84,7 @@ $(document).ready(function () {
 
         localStorage.setItem('users', JSON.stringify(employees));
         alert('Data submitted successfully!');
+        window.location.href = '/pages/emp-dashboard.html'
     });
 
     // Reset button
@@ -95,5 +96,6 @@ $(document).ready(function () {
     $('#cancel-btn').on('click', function (e) {
         e.preventDefault();
         $('.payroll-form')[0].reset();
+        window.location.href = '/pages/emp-dashboard.html';
     });
 });
