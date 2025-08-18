@@ -22,72 +22,72 @@
                 <h2>Employee Payroll form</h2>
                 <div>
                     <label for="userName">Name</label>
-                    <input type="text" class="nameinput" id="username" name="username">
+                    <input type="text" class="nameinput" id="username" name="username" required>
                 </div>
                 <div>
                     <label for="profile">Profile image</label>
-                    <input type="radio" class="radioinput" id="profile1" name="profile">
+                    <input type="radio" class="radioinput" id="profile1" name="profile" value="../assets/profile1.jpg" required>
                     <span><img src="../assets/profile1.jpg" alt="profile1" class="profile"></span>
 
-                    <input type="radio" class="radioinput" id="profile2" name="profile">
+                    <input type="radio" class="radioinput" id="profile2" name="profile" value="../assets/profile2.jpg" required>
                     <span><img src="../assets/profile2.jpg" alt="profile2" class="profile"></span>
 
-                    <input type="radio" class="radioinput" id="profile3" name="profile">
+                    <input type="radio" class="radioinput" id="profile3" name="profile" value="../assets/profile3.png" required>
                     <span><img src="../assets/profile3.png" alt="profile3" class="profile"></span>
 
-                    <input type="radio" class="radioinput" id="profile4" name="profile">
+                    <input type="radio" class="radioinput" id="profile4" name="profile" value="../assets/profile4.jpg" required>
                     <span><img src="../assets/profile4.jpg" alt="profile4" class="profile"></span>
                 </div>
                 <div>
                     <label for="gender">Gender</label>
-                    <input type="radio" class="radioinput" id="male" name="gender">
-                    <span class="option" >Male</span>
+                    <input type="radio" class="radioinput" id="male" name="gender" value="male" required>
+                    <span class="option" for="male" >Male</span>
 
-                    <input type="radio" class="radioinput" id="female" name="gender">
-                    <span class="option">Female</span>
+                    <input type="radio" class="radioinput" id="female" name="gender" value="female" required>
+                    <span class="option" for="female">Female</span>
                 </div>
                 <div>
                     <label for="department">Department</label>
                     <div class="check-box">
                         <input type="checkbox" id="hr" name="department" value="HR">
-                        <span  class="option">HR</span>
+                        <span  class="option" for="hr">HR</span>
 
                         <input type="checkbox" id="sales" name="department" value="Sales">
-                        <span class="option">Sales</span>
+                        <span class="option" for="sales">Sales</span>
 
                         <input type="checkbox" id="finance" name="department" value="Finance">
-                        <span class="option">Finance</span>
+                        <span class="option" for="finance">Finance</span>
 
                         <input type="checkbox" id="engineer" name="department" value="Engineer">
-                        <span class="option">Engineer</span>
+                        <span class="option" for="engineer">Engineer</span>
 
                         <input type="checkbox" id="others" name="department" value="others">
-                        <span class="option">Others</span>
+                        <span class="option" for="others">Others</span>
                     </div>
                 </div>
 
                 <div>
                     <label for="salary">Salary</label>
-                    <select name="salary" id="salary">
+                    <select name="salary" id="salary" required>
                         <option value="">Select Salary</option>
-                        <option value="">10000</option>
-                        <option value="">20000</option>
-                        <option value="">30000</option>
-                        <option value="">40000</option>
-                        <option value="">50000</option>
+                        <option value="10000">10000</option>
+                        <option value="20000">20000</option>
+                        <option value="30000">30000</option>
+                        <option value="40000">40000</option>
+                        <option value="50000">50000</option>
                     </select>
                 </div>
                 <div>
                     <label for="startDate"> Start Date</label>
-                    <select name="day" id="day">
+                    <select name="day" id="day" required>
                         <option value="">Day</option>
                     </select>
 
-                    <select name="month" id="month">
+                    <select name="month" id="month" required>
                         <option value="">Month</option>
                     </select>
 
-                    <select name="year" id="year">
+                    <select name="year" id="year" required>
                         <option value="">Year</option>
                     </select>
                 </div>
