@@ -236,3 +236,77 @@ button[type="reset"]:hover p,
 button[type="submit"]:hover p {
     color: #FFFFFF;
 }
+/* Responsive for small screens (300px - 600px) */
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .logo {
+        margin-left: 5%;
+        width: auto;
+        gap: 5px;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo h1 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    section {
+        margin: 10px;
+        width: 95%;
+    }
+
+    .payroll-form {
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 100%;
+    }
+
+    .payroll-form div {
+        flex-direction: column; /* stack label + input vertically */
+        align-items: center;
+        gap: 8px;
+    }
+
+    .payroll-form label {
+        width: 100%; 
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .nameinput,
+    select,
+    textarea {
+        width: 100%;
+    }
+
+    
+    .check-box {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    .btns {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .left-btns,
+    .right-btn {
+        width: 100%;
+    }
+
+    .left-btns button,
+    .right-btn button {
+        width: 100%;
+    }
+}
